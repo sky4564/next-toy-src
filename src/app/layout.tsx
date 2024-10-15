@@ -1,37 +1,19 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Metadata } from "next";
+import '@/app/globals.css'
 
 export const metadata: Metadata = {
-  title: "Food - Store",
-  description: "맛짱이 될꺼야",
+  title: {
+    template: "%s | Next Movies",
+    default: "Next Movies",
+  },
+  description: "The best movies on the best framework",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <p> is layout test layout above children</p>
+      <body>
         {children}
-        <p> is layout test layout under children</p>
       </body>
     </html>
   );
