@@ -1,23 +1,14 @@
 import MenuList from "@/app/components/MenuList"
+import GetTime from "@/app/components/GetTime"
+import GetTime2 from "@/app/components/GetTime2"
+import { Suspense } from "react"
 
 type FoodType = '양식' | '중식' | '한식'
 
 
-async function getTime() {
-  console.log(`Fetching movies: ${Date.now()}`);
-  await new Promise((resolve) => setTimeout(resolve, 3000))
-}
-async function getTime2() {
-  console.log(`Fetching movies: ${Date.now()}`);
-  await new Promise((resolve) => setTimeout(resolve, 5000))
-}
+
 
 export default async function Store({ params }: { params: { type: string } }) {
-
-
-
-  await Promise.all([getTime(), getTime2()])
-
   const decodedType = decodeURIComponent(params.type)
   const type = decodedType as FoodType
 
@@ -25,6 +16,17 @@ export default async function Store({ params }: { params: { type: string } }) {
     <div>
       <h1>음식점 페이지</h1>
       <MenuList type={type} />
+
+      <Suspense fallback={<div> is loading...</div>}>
+        <GetTime />
+      </Suspense>
+
+      <br></br>
+
+      <Suspense fallback={<div> is loading..... !!</div>}>
+        <GetTime2 />
+      </Suspense>
     </div>
+
   )
 }
