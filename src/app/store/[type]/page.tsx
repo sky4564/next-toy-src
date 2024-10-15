@@ -2,12 +2,24 @@ import MenuList from "@/app/components/MenuList"
 
 type FoodType = '양식' | '중식' | '한식'
 
-export default function Store({ params }: { params: { type: string } }) {
+
+async function getTime() {
+  console.log(`Fetching movies: ${Date.now()}`);
+  await new Promise((resolve) => setTimeout(resolve, 3000))
+}
+async function getTime2() {
+  console.log(`Fetching movies: ${Date.now()}`);
+  await new Promise((resolve) => setTimeout(resolve, 5000))
+}
+
+export default async function Store({ params }: { params: { type: string } }) {
+
+
+
+  await Promise.all([getTime(), getTime2()])
 
   const decodedType = decodeURIComponent(params.type)
   const type = decodedType as FoodType
-
-  console.log(type)
 
   return (
     <div>
