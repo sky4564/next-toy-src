@@ -1,14 +1,11 @@
-import MenuList from "@/app/components/MenuList"
-import { Suspense } from "react";
-
 export default async function Store() {
 
   return (
     <div>
-      <h1>음식점 페이지</h1>
-      <Suspense fallback={<h1> is fallback plz wait ...</h1>}>
-        <MenuList type={'중식'} />
-      </Suspense>
+      <h1>기본 음식점 페이지</h1>
+      <p>무엇을 먹고 싶습니까 ? </p>
+      <input placeholder="무슨 요리를 먹고 싶어요 ? "></input>
+
     </div>
   )
 }
