@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## css 전략 수립
+
+(grid css )
+레이아웃
+네비게이션 바 : 윗쪽 상단 가로열 길게 쭉 nav
+가게리스트 바 : 좌측 세로열 길게 쭉 listBar
+
+그안에 페이지가 표시되는형식
+어떤 컴포넌트에서도 볼수있도록 layout 으로표시
+
+그럼 레이아웃을 grid css 로 잡고 가면 어떨까 ?
