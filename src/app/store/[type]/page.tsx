@@ -1,6 +1,6 @@
-import MenuList from "@/app/components/MenuList"
-import GetTime from "@/app/components/GetTime"
-import GetTime2 from "@/app/components/GetTime2"
+import MenuList from "@/app/components/ui/menu/MenuList"
+import GetTime from "@/app/components/fn/GetTime"
+import GetTime2 from "@/app/components/fn/GetTime2"
 import { Suspense } from "react"
 
 type FoodType = '양식' | '중식' | '한식'
