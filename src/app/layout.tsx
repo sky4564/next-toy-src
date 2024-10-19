@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import '@/app/globals.css'
+import '@/app/globals.css';
+import NavBar from "@/app/components/ui/navigation/NavBar"
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     // 네브바는 계속 보지않을까.. ?     
     <html lang="en">
       <body>
+        <NavBar></NavBar>
         {children}
       </body>
     </html>
