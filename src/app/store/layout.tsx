@@ -5,7 +5,6 @@ export default function StoreLayout({
 }>) {
   return (
     <>
-      <p> is store lay out test</p>
       {children}
     </>
   );

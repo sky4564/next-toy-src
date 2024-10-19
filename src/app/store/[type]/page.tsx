@@ -27,7 +27,7 @@ export default async function Store({ params }: { params: { type: string } }) {
 
       <br></br>
 
-      <Suspense fallback={<SpinerLogo size={100} />}>
+      <Suspense fallback={<SpinerLogo size={50} />}>
         <GetTime2 />
       </Suspense>
     </div>
