@@ -2,11 +2,8 @@ import SpinerLogo from "../components/fn/SpinerLogo"
 
 export default function LoadingHome() {
     return (
-        <>
+        <div className="flex items-center justify-center w-[60%]">
             <SpinerLogo size={100} />
-            <SpinerLogo size={200} />
-            <SpinerLogo size={300} />
-            <SpinerLogo size={400} />
-        </>
+        </div>
     )
 }
