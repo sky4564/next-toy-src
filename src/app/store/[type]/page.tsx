@@ -2,6 +2,7 @@ import MenuList from "@/app/components/ui/menu/MenuList"
 import GetTime from "@/app/components/fn/GetTime"
 import GetTime2 from "@/app/components/fn/GetTime2"
 import { Suspense } from "react"
+import SpinerLogo from "@/app/components/fn/SpinerLogo"
 
 type FoodType = '양식' | '중식' | '한식'
 
@@ -26,7 +27,7 @@ export default async function Store({ params }: { params: { type: string } }) {
 
       <br></br>
 
-      <Suspense fallback={<div> is loading..... !!</div>}>
+      <Suspense fallback={<SpinerLogo size={100} />}>
         <GetTime2 />
       </Suspense>
     </div>

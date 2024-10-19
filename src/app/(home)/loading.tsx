@@ -1,34 +1,12 @@
+import SpinerLogo from "../components/fn/SpinerLogo"
+
 export default function LoadingHome() {
     return (
         <>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
-            <h2>Loading... home</h2>
+            <SpinerLogo size={100} />
+            <SpinerLogo size={200} />
+            <SpinerLogo size={300} />
+            <SpinerLogo size={400} />
         </>
     )
-
-
 }
