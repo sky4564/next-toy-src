@@ -1,7 +1,9 @@
 import { Metadata } from "next";
-import SideBar from "./components/ui/sideBar/SideBar";
 import '@/app/globals.css';
-import NavBar from "@/app/components/ui/navigation/NavBar"
+
+// import SideBar from "./components/ui/sideBar/SideBar";
+// import NavBar from "@/app/components/ui/navigation/NavBar"
+import SideBarVer2 from "./components/ui/sideBar/SideBarVer2";
 
 export const metadata: Metadata = {
   title: {
@@ -21,11 +23,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     // todo: root layout이 있으니깐 이거 ..  로딩만 보여주기가 힘드네 그냥 z- index 땡겨서 쓰는건 ? 
     <html lang="en">
       <body>
-        <NavBar></NavBar>
+        {/* <NavBar></NavBar>
         <div className="flex">
           <SideBar></SideBar>
           {children}
+        </div> */}
+        <div className="flex flex-row">
+          <SideBarVer2 />
+          {children}
         </div>
+
       </body>
     </html>
   );
