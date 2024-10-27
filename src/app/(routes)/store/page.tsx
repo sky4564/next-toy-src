@@ -1,4 +1,4 @@
-import InputBar from "../components/ui/submitForm/InputBar"
+import InputBar from "@/app/components/ui/submitForm/InputBar"
 
 export default async function Store() {
 

@@ -1,4 +1,4 @@
-import SpinerLogo from "../components/fn/SpinerLogo"
+import SpinerLogo from "@/app/components/fn/SpinerLogo"
 
 export default function LoadingHome() {
     return (

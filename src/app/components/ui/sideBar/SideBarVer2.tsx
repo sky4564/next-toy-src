@@ -19,7 +19,7 @@ export default function SideBarVer2() {
 
 
   return (
-    <div className=" bg-gray-600 w-20 h-fit items-center flex flex-col gap-11">
+    <div className=" bg-gray-600 w-20 h-screen items-center flex flex-col gap-11">
 
       <div className=" bg-green-400 mt-10 w-10 h-10">
         <Image src={logo} alt="homelogo" />
